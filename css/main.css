@@ -177,6 +177,13 @@ section[id*=section]:not(#hero-section) {
   }
 }
 
+.scroll-to-top-btn {
+  position: fixed;
+  right: 0.8rem;
+  bottom: -3rem;
+  transition: all 0.3s linear;
+}
+
 header {
   height: var(--height-navbar);
   position: absolute;

@@ -29,9 +29,13 @@ navLinks.forEach((element) => {
 });
 
 window.addEventListener("scroll", (event) => {
-  if (window.scrollY > 50)
+  if (window.scrollY > 50) {
     document.querySelector("header").classList.add("fixed-on-scroll");
-  else document.querySelector("header").classList.remove("fixed-on-scroll");
+    document.querySelector(".scroll-to-top-btn").style.bottom = ".8rem";
+  } else {
+    document.querySelector("header").classList.remove("fixed-on-scroll");
+    document.querySelector(".scroll-to-top-btn").style.bottom = "-4rem";
+  }
 });
 
 const accordionItemsHeaders = document.querySelectorAll(
