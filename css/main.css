@@ -138,6 +138,7 @@ section[id*=section]:not(#hero-section) {
 .my-primary-btn {
   background: #ff69c9;
   background: linear-gradient(to right, #ff67cb -8%, #ffcc67 100%, #ff67cb);
+  border: none;
   border-radius: 2rem;
   color: #fff;
   text-transform: uppercase;
@@ -181,6 +182,7 @@ section[id*=section]:not(#hero-section) {
   position: fixed;
   right: 0.8rem;
   bottom: -3rem;
+  z-index: 100;
   transition: all 0.3s linear;
 }
 
