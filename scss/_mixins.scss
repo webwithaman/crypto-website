@@ -1,0 +1,9 @@
+@mixin common-btn-props {
+  border-radius: 2rem;
+  color: $color-text-primary;
+  text-transform: uppercase;
+  padding: 0.6rem 1.3rem;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+  transition: all 0.3s linear;
+}

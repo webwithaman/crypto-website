@@ -1,0 +1,86 @@
+@import "variables";
+
+// Reset Default Styles Start
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-text-primary;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+ul,
+ol,
+li,
+label,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $color-text-primary;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color-text-active;
+  background: linear-gradient(#ff67cb -8%, #ffcc67 100%, #ff67cb);
+}
+
+@media screen and (max-width: 300px) {
+  * {
+    word-wrap: break-word;
+  }
+
+  html {
+    font-size: 82%;
+  }
+}
+
+/* General Styles for screen size <= 230px */
+@media screen and (max-width: 230px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+/* General Styles for screen size <= 180px */
+@media screen and (max-width: 180px) {
+  html {
+    font-size: 45%;
+  }
+}

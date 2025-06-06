@@ -1,0 +1,33 @@
+.my-primary-btn {
+  background: $color-text-active;
+  background: linear-gradient(to right, #ff67cb -8%, #ffcc67 100%, #ff67cb);
+  @include common-btn-props;
+
+  i {
+    padding-left: 0.3rem;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background: linear-gradient(to right, #ff67cb -8%, #ffcc67 0%, #ff67cb);
+      color: $color-text-primary;
+    }
+  }
+}
+
+.my-secondary-btn {
+  background-color: transparent;
+  border: 2px solid $color-text-primary;
+  @include common-btn-props;
+
+  i {
+    padding-left: 0.3rem;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $color-text-primary;
+      color: $color-bg-helper;
+    }
+  }
+}

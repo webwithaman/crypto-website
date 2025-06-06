@@ -1,0 +1,43 @@
+@import "variables";
+
+.animate-smooth-updown {
+  animation: animate-smooth-updown 1.2s linear infinite alternate;
+
+  @keyframes animate-smooth-updown {
+    100% {
+      transform: translateY(-1rem);
+    }
+  }
+}
+
+.my-bg-primary {
+  background: $color-bg-primary;
+}
+
+.my-gradient-primary {
+  background: $color-bg-secondary;
+  background: linear-gradient(
+    270deg,
+    rgba(25, 61, 192, 1) 0%,
+    rgba(10, 29, 149, 1) 50%,
+    rgba(25, 61, 192, 1) 100%
+  );
+}
+
+.my-gradient-secondary {
+  background: $color-text-active;
+  background: linear-gradient(to right, #ff67cb -8%, #ffcc67 100%, #ff67cb);
+}
+
+.section-header h2 {
+  text-transform: capitalize;
+}
+
+.section-header p {
+  margin-inline: auto;
+  max-width: 600px;
+}
+
+section[id*="section"]:not(#hero-section) {
+  padding-block: 6rem;
+}
