@@ -62,11 +62,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #fff;
+  background: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ff69c9;
+  background: #ff69c9;
   background: linear-gradient(#ff67cb -8%, #ffcc67 100%, #ff67cb);
 }
 
